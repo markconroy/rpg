@@ -157,6 +157,7 @@ function handleTaperWeeks(week) {
   const numberOfTableRows = tableBody.querySelectorAll("tr").length;
   const weekNumber = parseInt(numberOfTableRows + 1);
   const row = document.createElement("tr");
+  row.classList.add("training-plan__row");
   row.innerHTML = `
       <td headers="traning-plan-week" class="training-plan__cell training-plan__cell--week-number">${weekNumber}</td>
       <td headers="traning-plan-day-1" class="training-plan__cell training-plan__cell--day-1">
