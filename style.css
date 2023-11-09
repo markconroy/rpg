@@ -241,6 +241,18 @@ select {
 .container--xlarge {
   max-width: var(--width-xlarge);
 }
+.container--themed {
+  background-color: var(--color-theme-2);
+  padding: var(--spacing);
+  border-bottom: var(--border);
+}
+.note {
+  display: flex;
+  justify-content: center;
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
 
 .main > .container {
   margin-top: var(--spacing-double);
